@@ -1,0 +1,53 @@
+<ion-tabs #tabs>
+ 
+  <ion-tab-bar slot="bottom">
+      <!-- href="/menu/side/(menucontent:first//tab1:tab1)" -->
+
+    <ion-tab-button tab="tab1">
+      <ion-icon name="sunny"></ion-icon>
+      <ion-label>Tab 1</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab2">
+      <ion-icon name="moon"></ion-icon>
+      <ion-label>Tab 2</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+  <ion-tab tab="tab1">
+    <ion-router-outlet name="hometab"></ion-router-outlet>
+
+      <!-- Showing content direclty in here works, but not using the router outlet! -->
+
+      <!-- <ion-header>
+        <ion-toolbar color="primary">
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title>tab 1</ion-title>
+        </ion-toolbar>
+      </ion-header>
+       
+      <ion-content padding>
+
+      </ion-content>  -->
+  </ion-tab>
+
+  <ion-tab tab="tab2">
+        <!-- <ion-router-outlet name="tab2"></ion-router-outlet> -->
+
+      <ion-header>
+          <ion-toolbar color="primary">
+            <ion-buttons slot="start">
+              <ion-menu-button></ion-menu-button>
+            </ion-buttons>
+            <ion-title>tab 2</ion-title>
+          </ion-toolbar>
+        </ion-header>
+         
+        <ion-content padding>
+          I have static content!
+        </ion-content>
+  </ion-tab>
+  
+</ion-tabs>
