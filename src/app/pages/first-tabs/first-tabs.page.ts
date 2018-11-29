@@ -1,5 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { Tabs } from '@ionic/angular';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-first-tabs',
@@ -8,12 +7,9 @@ import { Tabs } from '@ionic/angular';
 })
 export class FirstTabsPage implements OnInit {
 
-  @ViewChild('tabs')tabs: Tabs
   constructor() { }
 
   ngOnInit() {
-    console.log('INIT tabs page');
-    this.tabs.select('tab1');
   }
 
 }
